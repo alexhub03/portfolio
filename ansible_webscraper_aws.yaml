@@ -1,0 +1,66 @@
+---
+  # ansible-playbook main.yml
+  - name: run tasks on all hosts
+    gather_facts: no
+    hosts: localhost
+    become: True
+    vars:
+       bucket_name: mybucket20210801
+       dir1: /root
+       filename: data.csv
+    tasks:
+      - name: Install python3 & git package
+        yum:
+          name:
+            - python3
+            - git
+          state: present
+
+      - name: Install prequisites
+        git:
+         repo: 'https://github.com/alexprojects1/portfolio/blob/main/prerequisites.sh'
+         dest: /home/ec2-user/web_scraper_prereq
+         update: no
+
+      - name: Run the bash scripts command
+        shell: bash /home/ec2-user/web_scraper_prereq/prerequisites.sh
+      - name: Clone github repository
+        git:
+         repo: 'https://github.com/alexprojects1/portfolio/blob/main/webscraper.py'
+         dest: /home/ec2-user/myscraper_project
+         update: no
+      - name: Install requests & beautifulsoup using pip3
+        pip:
+          name:
+            - requests
+            - beautifulsoup4
+          executable: pip3
+      - name: Run the scripts command
+        shell: python3 /home/ec2-user/myscraper_project/webscraper.py
+
+      - name: Create an empty buckets2
+        aws_s3:
+          bucket: mybucket20210801
+          mode: create
+          permission: public-read-write
+
+      - name: Upload to bucket 2
+        aws_s3:
+          bucket: mybucket20210801
+          object: /root/yelp_reviews_new.csv
+          src: data.csv
+          mode: put
+#         rgw: true
+    #     s3_url: "http://localhost:8000"
+      - name: Get URL
+        aws_s3:
+          bucket: "{{ bucket_name}}"
+          object: "{{ dir1 }}/{{ filename }}"
+          expiration: 10800
+          mode: geturl
+        register: url_output
+        tags: geturl
+
+      - debug:
+          var: url_output
+        tags: debug
