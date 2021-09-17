@@ -1,4 +1,4 @@
-# Provisioning and Management of a highly available AKS cluster with 2 replicas in a pod
+# Azure Provision and Management of a highly available AKS cluster with 2 replicas in a pod
 
 + Azure AKS cluster with a node pool of 3 nodes
 + Deployment manifest file of the cluster (2 replicas in the pod) , pod template configure, nginx   image from docker hub + resource limits
