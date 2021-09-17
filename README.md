@@ -1,4 +1,9 @@
 # Projects:
+
++ **Provisioning and Management of a highly available Amazon EKS cluster with 3 Worker Nodes deployment*** running an nginx application
+
+  https://github.com/alexprojects1/portfolio/tree/main/Amazon_EKS_project
+
 + ***Python3 web scraping application*** to parse Yelp client information and store website review data while integrating the data through Ansible onto the AWS cloud platform: 
 
   https://github.com/alexprojects1/portfolio/blob/main/ansible_webscraper_aws.yaml
@@ -18,9 +23,7 @@
   https://github.com/alexprojects1/portfolio/tree/main/ELK_Deployment_Ubuntu
   
 
-+ Provisioning and Management of a highly available Amazon EKS cluster with 3 Worker Nodes deployment
 
-  https://github.com/alexprojects1/portfolio/tree/main/Amazon_EKS_project
   
 
 # Ongoing/ In progress:
