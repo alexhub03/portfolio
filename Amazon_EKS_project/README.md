@@ -1,4 +1,4 @@
-# Provisioning and Management of a highly available EKS cluster with 3 Worker Nodes deployment
+# Provision and Management of a highly available EKS cluster with 3 Worker Nodes deployment 
 
 + Created k8-admin user from IAM
 + Added the user to admin security group
