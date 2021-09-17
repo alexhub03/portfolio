@@ -1,6 +1,6 @@
 # Projects:
 
-+ **Provisioning and Management of a highly available Amazon EKS cluster with 3 Worker Nodes deployment*** running an nginx application
++ **Provision and Management of a highly available Amazon EKS cluster with 3 Worker Nodes deployment*** running an nginx application
 
   https://github.com/alexprojects1/portfolio/tree/main/Amazon_EKS_project
 
