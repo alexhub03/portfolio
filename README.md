@@ -18,7 +18,7 @@
   https://github.com/alexprojects1/portfolio/tree/main/ELK_Deployment_Ubuntu
   
 
-+ Provisioning and Management of a highly available EKS cluster with 3 Worker Nodes deployment
++ Provisioning and Management of a highly available Amazon EKS cluster with 3 Worker Nodes deployment
 
   https://github.com/alexprojects1/portfolio/tree/main/Amazon_EKS_project
   
