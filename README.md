@@ -33,7 +33,7 @@
 # Ongoing/ In progress:
 + ***Backend Python - Flask Application with PostgreSQL database, deployed in a docker containerzed application in a Kubernetes cluster***:
 
-  https://github.com/alexprojects1/portfolio/tree/main/Flask_SQLAlchemy
+ https://github.com/alexprojects1/portfolio/tree/main/Project_Flask_SQL_Alchemy
 
 # Automation projects:
 + ***Python3 file globbing*** and searching logs:
