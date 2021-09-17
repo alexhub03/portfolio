@@ -16,6 +16,12 @@
 + Deployed and interacted with ***Elasticsearch open search and analytics onto a remote AWS EC2 host*** from a local Linux virtual machine to aggregate and visualize log data:
 
   https://github.com/alexprojects1/portfolio/tree/main/ELK_Deployment_Ubuntu
+  
+
++ Provisioning and Management of a highly available EKS cluster with 3 Worker Nodes deployment
+
+  https://github.com/alexprojects1/portfolio/tree/main/Amazon_EKS_project
+  
 
 # Ongoing/ In progress:
 + ***Backend Python - Flask Application with PostgreSQL database, deployed in a docker containerzed application in a Kubernetes cluster***:
