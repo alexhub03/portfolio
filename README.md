@@ -4,7 +4,7 @@
 
   https://github.com/alexprojects1/portfolio/blob/main/Azure_AKS_Cluster_Project/README.md
   
-+ **Amazon Provision and Management of a highly available EKS cluster with 3 Worker Nodes deployment*** running an nginx application
++ **AWS Provision and Management of a highly available EKS cluster with 3 Worker Nodes deployment*** running an nginx application
 
   https://github.com/alexprojects1/portfolio/tree/main/Amazon_EKS_project
 
