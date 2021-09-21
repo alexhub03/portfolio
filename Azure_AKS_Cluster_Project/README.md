@@ -1,5 +1,10 @@
 # Azure Provision and Management of a highly available AKS cluster with 2 replicas in a pod
 
+### AKS Cluster Diagram:
+<a href="https://drive.google.com/uc?export=view&id=1JmBHiGa6cr2sCAvh7uvlNDK8ic0scbdA"><img src="https://drive.google.com/uc?export=view&id=1JmBHiGa6cr2sCAvh7uvlNDK8ic0scbdA" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+
+
+
 + Azure AKS cluster with a node pool of 3 nodes
 + Deployment manifest file of the cluster (2 replicas in the pod) , pod template configure, nginx   image from docker hub + resource limits
 + Port 80 Service opened and load balancer service added for external access
