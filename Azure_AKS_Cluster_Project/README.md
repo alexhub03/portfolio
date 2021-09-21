@@ -16,6 +16,8 @@ kubectl get rs # Current replica sets deployed
 
 kubectl get service # Load balancer information found here
 
+kubectl get nodes # Show nodes information
+
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
 ```
