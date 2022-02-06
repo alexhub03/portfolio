@@ -26,7 +26,7 @@
 
   https://github.com/alexprojects1/portfolio/tree/main/ELK_Deployment_Ubuntu
   
-
++ Bash solution to run an ansible module command via cron to clear vm cache and create and clear log ***Bash, Ansible, Cron***:
 
   
 
