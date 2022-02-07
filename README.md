@@ -29,7 +29,10 @@
 + Bash solution to run an ansible module command via cron to clear vm cache and create and clear log ***Bash, Ansible, Cron***:
 
   https://github.com/alexprojects1/portfolio/blob/main/bash_cron_ansible_server_clear_cache.sh
-  
+
++ Create/Provision an Apache Website through ***Terraform, AWS and Ansible***
+
+  https://github.com/alexprojects1/portfolio/tree/main/Terraform_and_Ansible_Deployment_AWS_Website
 
 # Ongoing/ In progress:
 + ***Backend Python - Flask Application with PostgreSQL database, deployed in a docker containerzed application in a Kubernetes cluster***:
