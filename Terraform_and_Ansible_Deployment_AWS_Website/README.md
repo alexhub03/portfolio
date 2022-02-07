@@ -28,7 +28,7 @@ terraform apply auto approve
 ```
 
 ### Terraform deployment + Output:
-<a href="https://drive.google.com/uc?export=view&id=SeBuUq57NZRVyH7HKSzqW9bLNdBtD"><img src="https://drive.google.com/uc?export=view&id=SeBuUq57NZRVyH7HKSzqW9bLNdBtD" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+<a href="https://drive.google.com/uc?export=view&id=1-j_SeBuUq57NZRVyH7HKSzqW9bLNdBtD"><img src="https://drive.google.com/uc?export=view&id=1-j_SeBuUq57NZRVyH7HKSzqW9bLNdBtD" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
 
 
 
