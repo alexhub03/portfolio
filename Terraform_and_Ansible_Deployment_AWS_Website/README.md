@@ -1,4 +1,4 @@
-# Provision an Apache Website through Terraform and Ansible
+# Create/Provision an Apache Website through Terraform and Ansible
 
 + Configure AWS Keys
 + Terraform Code:
@@ -25,5 +25,14 @@ terraform plan  #execution plan
 
 terraform apply auto approve
 
-
 ```
+
+### Terraform deployment + Output:
+<a href="https://drive.google.com/uc?export=view&id=SeBuUq57NZRVyH7HKSzqW9bLNdBtD"><img src="https://drive.google.com/uc?export=view&id=SeBuUq57NZRVyH7HKSzqW9bLNdBtD" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+
+
+
+### Proof of Concept:
+<a href="https://drive.google.com/uc?export=view&id=1TVQol_i5XVQGsZkhDxU2ZaskcEi758Nn"><img src="https://drive.google.com/uc?export=view&id=1TVQol_i5XVQGsZkhDxU2ZaskcEi758Nn" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+
+
