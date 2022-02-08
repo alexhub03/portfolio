@@ -13,6 +13,8 @@
   + pip install --upgrade google-cloud-storage
 + GCP
   + Create a new bucket 
+  + Upload to bucket
+  + Download from bucket
 
 
 

@@ -8,6 +8,12 @@
 
   https://github.com/alexprojects1/portfolio/tree/main/Amazon_EKS_project
 
+
+
++ ***Google Cloud Platform,  Python API*** - Create bucket, upload to bucket, download from bucket
+
+  https://github.com/alexprojects1/portfolio/tree/main/GCP_Python_API
+
 + ***Python3 web scraping application*** to parse Yelp client information and store website review data while integrating the data through Ansible onto the AWS cloud platform: 
 
   https://github.com/alexprojects1/portfolio/blob/main/ansible_webscraper_aws.yaml
