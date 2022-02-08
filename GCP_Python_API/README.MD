@@ -26,7 +26,7 @@ pip install --upgrade google-cloud-storage
 
 ```
 
-# Errors Encountered:
+## Errors Encountered:
 
 + Note bucket.location is depricated
 
