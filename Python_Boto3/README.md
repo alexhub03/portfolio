@@ -1,50 +1,25 @@
-# Docker Documentation
+# Boto3 Documentation
 
 
-## AWS Docker 
-```
-+ AWS: Cloudformation Template - Prebuilt Application Stack:
-https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://learn-cantrill-labs.s3.amazonaws.com/awscoursedemos/0030-aws-associate-ec2docker/ec2docker.yaml&stackName=EC2DOCKER
+ 
+## boto3_EC2_Instance_Information_2.py :
++ Parse EC2 information with describe_instances boto3 module for multiple instances
+https://github.com/alexprojects1/portfolio/blob/main/Python_Boto3/boto3_EC2_Instance_Information_2.py
 
-```
+<a href="https://drive.google.com/uc?export=view&id=1-AGNuihC7LshSKb09_cPsatkJ_4XEWvy"><img src="https://drive.google.com/uc?export=view&id=1-AGNuihC7LshSKb09_cPsatkJ_4XEWvy" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
 
+## boto3_EC2_Instance_tags_2.py:
++ Parse EC2 instance ids with describe_instances boto3 module and append a tag to EC2 instance id
+https://github.com/alexprojects1/portfolio/blob/main/Python_Boto3/boto3_EC2_Instance_tags_2.py
 
-## Quick Command Reference:
-
-```
-sudo amazon-linux-extras install docker
-sudo service docker start   
-sudo usermod -a -G docker ec2-user    
-LOGOUT and login
-sudo su - ec2-user
-
-# Build Docker Image
-cd aws-sa-associate-saac02/09-Containers-ECS/container_of_test/container
-docker build -t containeroftest .
-docker images --filter reference=containeroftest
-
-# Run Container from Image
-docker run -t -i -p 80:80 containeroftest
+<a href="https://drive.google.com/uc?export=view&id=1fW_HBLle8l89t04eeJvxokwMys_buEf7"><img src="https://drive.google.com/uc?export=view&id=1fW_HBLle8l89t04eeJvxokwMys_buEf7" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
 
 
-# Docker file:
-FROM centos: latest     
-LABEL maintainer="test4"  
-RUN yum -y install httpd    
-COPY index.html /var/www/html  
-COPY containerandtest*.jpg /var/www/html     
-ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]    
-EXPOSE 80   #which services should be exposed. Port 80
+## boto3_S3_bucket_create.py:
++ Create a unique S3 bucket with confirmation
+https://github.com/alexprojects1/portfolio/blob/main/Python_Boto3/boto3_S3_bucket_create.py
 
-# Upload Container to Dockerhub 
-docker login --username=YOUR_USER
-docker images
-docker tag IMAGEID YOUR_USER/containeroftest
-docker push YOUR_USER/containeroftest:latest
+<a href="https://drive.google.com/uc?export=view&id=1ziKRKvcZktPpVJ1SnUuXc6OQgBE_Yac0"><img src="https://drive.google.com/uc?export=view&id=1ziKRKvcZktPpVJ1SnUuXc6OQgBE_Yac0" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
 
-
-
-
-```
 
 
