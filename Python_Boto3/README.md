@@ -1,6 +1,5 @@
 # Boto3 Documentation
 
-
  
 ## boto3_EC2_Instance_Information_2.py :
 + Parse EC2 information with describe_instances boto3 module for multiple instances
