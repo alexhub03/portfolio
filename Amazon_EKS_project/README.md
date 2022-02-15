@@ -6,7 +6,7 @@
     + Auto assign public ip to connect to public IP 
 + Interactive terminal session initialized
 + Updated AWS cli version to version 2 
-+ Deploy EKS cluster creation with 3 worker nodes
++ Deployed EKS cluster creation with 3 worker nodes via Cloudformation eksctl command
 + Launch the nginx application deployment on the pods
 + Best practice: create the service first, before the pods/deployments (when Kubernetes starts container creates env variables pointing to all the services when started)
 + Accessed the app through the load balancer which exposed the app to the internet
@@ -21,7 +21,7 @@ kubectl get pod  # Running pods
 
 kubectl get rs # Current replica sets deployed
 
-kubectl get service # Load balancer information found here
+kubectl get service # Load balancer information 
 
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
@@ -31,7 +31,7 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
 ## Important Notes
 
-+ Sequnce of commands to provision EKS cluster
++ Sequence of commands to provision EKS cluster
 ---
 ```
 
@@ -104,6 +104,10 @@ kubectl get rs
 kubectl get service
 
 curl a36bc1a82ce4747f9b6129a1f63dea3d-2026412805.us-east-1.elb.amazonaws.com
+
+eksctl get cluster
+
+eksctl delete cluster dev
 
 ```
 
