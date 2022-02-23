@@ -4,7 +4,7 @@
 <a href="https://drive.google.com/uc?export=view&id=1JmBHiGa6cr2sCAvh7uvlNDK8ic0scbdA"><img src="https://drive.google.com/uc?export=view&id=1JmBHiGa6cr2sCAvh7uvlNDK8ic0scbdA" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
 
 
-
++ Used Azure CLI with Bash
 + Azure AKS cluster with a node pool of 3 nodes
 + Deployment manifest file of the cluster (2 replicas in the pod) , pod template configure, nginx   image from docker hub + resource limits
 + Port 80 Service opened and load balancer service added for external access
@@ -29,16 +29,33 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 ## Quick Command Reference, Azure Specific:
 
 ```
+
+# Check AZ group list:
+cloud@Azure:~$ az group list
+[
+  {
+    "id": "/subscriptions/4cedc5dd-e3ad-468d-bf66-32e31bdb9148/resourceGroups/491-7acd2fb9-deploying-and-accessing-an-applicatio",
+    "location": "eastus",
+    "managedBy": null,
+    "name": "491-7acd2fb9-deploying-and-accessing-an-applicatio",
+    "properties": {
+      "provisioningState": "Succeeded"
+    },
+    "tags": null,
+    "type": "Microsoft.Resources/resourceGroups"
+  }
+
+
 # created variable RG for the resource group
-cloud@Azure:~$ RG=491-420b013b-deploying-and-accessing-an-applicatio  
+cloud@Azure:~$ RG=491-7acd2fb9-deploying-and-accessing-an-applicatio 
 
 az aks create \ 
 --resource-group $RG \ 
---name Cluster01 \            
---node-count 3 \
---generate-ssh-keys \
---node-vm-size Standard_B2s \
---enable-manage-identity
+--name Cluster01 \        #cluster01    
+--node-count 3 \          #deploy 3 nodes
+--generate-ssh-keys \     #generate ssh keys for authentication
+--node-vm-size Standard_B2s \                   #standard B2s size
+--enable-managed-identity                        #managed identity
 
 # Configure kubectl to run commands against.   kubectl needs to know which cluster to run against
 
@@ -151,7 +168,7 @@ spec:
   - port: 80
   #Used to tell the Service which Pods to associate with
   selector:
-    app: aks-web-app   #tells teh service which app to be associated to 
+    app: aks-web-app   #tells the service which app to be associated to 
 
 
 cloud@Azure:~$ touch service.yaml
